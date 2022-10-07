@@ -3,10 +3,12 @@
 import createComment from "./comments/restful/createComment";
 import deleteComment from "./comments/restful/deleteComment";
 import getAllComments from "./comments/restful/getAllComments";
-import onCommentCreated from "./comments/reactive/onCommentCreated";
+// import onCommentCreated from "./comments/reactive/onCommentCreated";
 import updateComment from "./comments/restful/updateComment";
 import deleteBadWord from "./comments/restful/deleteBadWord";
 import getAllBadWords from "./comments/restful/getAllBadWords";
+import onCreateComment from "./comments/reactive/commentFilter";
+
 
 
 
@@ -25,10 +27,11 @@ import getAllBadWords from "./comments/restful/getAllBadWords";
 
 exports.getAllComments = getAllComments;
 exports.createComment = createComment;
-exports.onCommentCreated = onCommentCreated;
+// exports.onCommentCreated = onCommentCreated;
 exports.updateComment = updateComment;
 exports.deleteComment = deleteComment;
 exports.deleteBadWord = deleteBadWord;
 exports.getAllBadWords = getAllBadWords;
+exports.onCreateComment = onCreateComment;
 
 
