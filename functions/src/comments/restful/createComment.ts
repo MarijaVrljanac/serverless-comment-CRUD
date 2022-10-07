@@ -8,10 +8,12 @@ const createComment = createRestuflFunction({
   callback: async (req, res) => {
     try {
       const body: ICreateCommentRequest = req.body;
+      let r = body.text;
+      r = r.split("fuck").join("****");
 
       const comment = createCommentRequest({
         username: body.username,
-        text: body.text,
+        text: r,
       });
 
       const ref = await db.collection("comments").add(comment);
